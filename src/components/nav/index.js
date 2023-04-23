@@ -1,0 +1,34 @@
+import { useState } from 'react'
+
+import useScreenSize from '@/hooks/useScreenSize'
+
+import Hamburger from './Hamburger'
+import NavWrapper from './NavWrapper'
+import SectionList from './SectionList'
+
+function NavBar() {
+    const [isListActive, setIsListActive] = useState(false)
+    const [{ width }, breakpoints] = useScreenSize()
+    const { mobile, tablet, desktop } = breakpoints()
+
+    if (width <= mobile || (width > mobile && width < tablet)) {
+        return (
+            <NavWrapper active={isListActive}>
+                <Hamburger
+                    isListActive={isListActive}
+                    onClick={setIsListActive}
+                />
+            </NavWrapper>
+        )
+    }
+
+    if (width >= tablet) {
+        return (
+            <NavWrapper>
+                <SectionList />
+            </NavWrapper>
+        )
+    }
+}
+
+export default NavBar
