@@ -17,7 +17,8 @@ function SectionList() {
             {sections.map((sec, i) => (
                 <li key={`section-${i}`} className={`px-5`}>
                     <span
-                        className={`${spaceMono.className} text-dark-gray md:text-xl lg:text-3xl xl:text-4xl capitalize`}
+                        className={`${spaceMono.className} text-dark-gray md:text-xl lg:text-2xl 
+                        hover:text-neon-blue hover:cursor-pointer capitalize`}
                     >
                         {sec}
                     </span>{' '}

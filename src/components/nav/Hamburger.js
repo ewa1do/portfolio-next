@@ -52,9 +52,8 @@ function Hamburger(props) {
                                 <p className={`text-3xl `}>{sec}</p>
                             </li>
                         ))}
-                        <li className={`py-8`}>
-                            <ButtonDownload />
-                        </li>
+                        <li className={`py-8`}></li>
+                        <ButtonDownload />
                     </ul>
                 </div>
             )}

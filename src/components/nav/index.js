@@ -6,7 +6,7 @@ import Hamburger from './Hamburger'
 import NavWrapper from './NavWrapper'
 import SectionList from './SectionList'
 
-function NavBar() {
+function NavBar(props) {
     const [isListActive, setIsListActive] = useState(false)
     const [{ width }, breakpoints] = useScreenSize()
     const { mobile, tablet, desktop } = breakpoints()
