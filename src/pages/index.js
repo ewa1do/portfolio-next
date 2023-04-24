@@ -1,6 +1,8 @@
 import { Space_Mono } from 'next/font/google'
 
 import NavBar from '@/components/nav'
+
+import About from './About'
 import HomePage from './HomePage'
 
 import useScreenSize from '@/hooks/useScreenSize'
@@ -14,11 +16,13 @@ export default function Home() {
 
     return (
         <div
-            className={`bg-bg-dark h-screen ${
+            className={`bg-bg-dark h-screen overflow-x-hidden ${
                 width >= tablet ? 'px-6 pt-6' : ''
             }`}
         >
             <HomePage />
+
+            <About />
         </div>
     )
 }

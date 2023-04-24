@@ -1,13 +1,12 @@
-import { Space_Mono, Roboto } from 'next/font/google'
 import NavBar from '@/components/nav'
 import ButtonDownload from '@/components/buttons/ButtonDownload'
+import getFonts from '@/utils/fonts'
 
-const spaceMono = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] })
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500'] })
+const { roboto, spaceMono } = getFonts()
 
 function HomePage(props) {
     return (
-        <section className="pb-80">
+        <section className="">
             <NavBar />
 
             <div
@@ -25,7 +24,7 @@ function HomePage(props) {
                 </h1>
 
                 <p
-                    className={`${roboto.className} text-dark-gray py-3 mb-4 text-2xl md:text-3xl w-full md:w-4/5 xl:w-3/5 xl:text-4xl`}
+                    className={`${roboto.className} text-dark-gray py-3 mb-4 text-2xl md:text-3xl w-full sm:w-4/5 md:w-4/5 xl:w-3/5 xl:text-4xl`}
                 >
                     I&apos;m a software developer with expertise in both{' '}
                     <span className="text-neon-blue">backend </span>
