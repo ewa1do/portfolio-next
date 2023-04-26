@@ -6,7 +6,7 @@ const { roboto, spaceMono } = getFonts()
 
 function HomePage(props) {
     return (
-        <section className="">
+        <section className="md:pb-48 lg:pb-28">
             <NavBar />
 
             <div

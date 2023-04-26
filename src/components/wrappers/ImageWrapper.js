@@ -1,15 +1,7 @@
-import { useState } from 'react'
+import useHover from '@/hooks/useHover'
 
 function ImageWrapper(props) {
-    const [isHovering, setIsHovering] = useState(false)
-
-    function handleMouseEnter() {
-        setIsHovering(true)
-    }
-
-    function handleMouseLeave() {
-        setIsHovering(false)
-    }
+    const { isHovering, handleMouseEnter, handleMouseLeave } = useHover()
 
     const { extraStyles } = props
     const defaultStyles = 'mt-10 h-80 w-96'
@@ -39,7 +31,7 @@ function ImageWrapper(props) {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <h2>Hello</h2>
+                {props.children}
             </picture>
         )
     }

@@ -5,6 +5,7 @@ import NavBar from '@/components/nav'
 import About from './About'
 import Experience from './Experience'
 import HomePage from './HomePage'
+import Projects from './Projects'
 
 import useScreenSize from '@/hooks/useScreenSize'
 
@@ -26,6 +27,8 @@ export default function Home() {
             <About />
 
             <Experience />
+
+            <Projects />
         </div>
     )
 }

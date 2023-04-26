@@ -14,7 +14,7 @@ const workExp = [
         duration: 'Oct 2022 - April 2023',
         description: [
             'Write modern, performant, maintainable code for the backend server and the frontend client',
-            'Work with technologies such as Express.js, MySQL, React,js and styled components.',
+            'Work with technologies such as Express.js, MySQL, React.js and styled components.',
             'Create RESTful APIs, designing and implementing database schemas, and implementing security features to protect against common attacks.',
         ],
         link: 'https://www.ancientsociety.io',
@@ -107,12 +107,12 @@ function Experience() {
                         {duration}
                     </p>
                     <ul
-                        className={`${spaceMono.className} flex flex-col justify-center`}
+                        className={`${spaceMono.className} flex flex-col items-start min-h-[25rem]`}
                     >
                         {description.map((desc, i) => (
                             <li
                                 key={`desc-${i + i}`}
-                                className="flex items-center py-4 "
+                                className="flex items-center py-4 lg:py-6 "
                             >
                                 <svg
                                     width="20"
