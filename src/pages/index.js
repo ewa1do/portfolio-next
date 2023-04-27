@@ -3,6 +3,7 @@ import { Space_Mono } from 'next/font/google'
 import NavBar from '@/components/nav'
 
 import About from './About'
+import Contact from './Contact'
 import Experience from './Experience'
 import HomePage from './HomePage'
 import Projects from './Projects'
@@ -29,6 +30,8 @@ export default function Home() {
             <Experience />
 
             <Projects />
+
+            <Contact />
         </div>
     )
 }
