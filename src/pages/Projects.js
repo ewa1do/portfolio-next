@@ -34,14 +34,17 @@ const projects = [
 function Projects() {
     return (
         <section>
-            <div className="pl-10">
+            <div className="pl-10 lg:pl-16">
                 <Title>What I&apos;ve Built</Title>
             </div>
 
             <ul>
                 {projects.map((proj, i) => (
                     <li key={`project-${i + 1}`}>
-                        <ProjectCard {...proj} />
+                        <ProjectCard
+                            {...proj}
+                            orientation={`${i % 2 === 0 ? 'right' : 'left'}`}
+                        />
                     </li>
                 ))}
             </ul>
