@@ -15,4 +15,42 @@
         width: 2rem;
         height: 1px;
     }
+
+    .edu {
+        color: var(--neon-blue);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .edu {
+        animation-duration: 3s;
+        animation-name: blink-182;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    @keyframes blink-182 {
+        25% {
+            color: #adb5bd;
+        }
+
+        30% {
+            color: var(--neon-blue);
+        }
+
+        50% {
+            color: #adb5bd;
+        }
+
+        60% {
+            color: var(--neon-blue);
+        }
+
+        75% {
+            color: #adb5bd;
+        }
+
+        100% {
+            color: var(--neon-blue);
+        }
+    }
 }

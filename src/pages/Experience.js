@@ -64,7 +64,10 @@ function Experience() {
     }
 
     return (
-        <section className="pl-10 pb-40 -mt-20 md:-mt-60">
+        <section
+            id="work_experience"
+            className="section section--hidden pl-10 pb-40 -mt-20 md:-mt-60"
+        >
             <div className="md:ml-[25%] mb-8">
                 <Title>Work Experience</Title>
             </div>

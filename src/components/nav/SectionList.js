@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react'
+
 import { Space_Mono } from 'next/font/google'
 
 import useScreenSize from '@/hooks/useScreenSize'
@@ -7,21 +9,40 @@ import ButtonDownload from '../buttons/ButtonDownload'
 const spaceMono = Space_Mono({ subsets: ['latin'], weight: '400' })
 
 function SectionList() {
+    const listRef = useRef()
+
     const [{ width }, breakpoints] = useScreenSize()
     const { mobile, tablet, desktop } = breakpoints()
 
     const sections = sectionList()
 
+    useEffect(() => {
+        setTimeout(() => {
+            listRef.current.classList.remove('nav--hidden')
+        }, 3000)
+    }, [])
+
+    function scrollTo(string = '') {
+        const splittedString = string.split(' ')
+
+        if (splittedString.length > 1) {
+            return splittedString.join('_')
+        }
+
+        return string
+    }
+
     return (
-        <ul className="flex items-center py-2">
+        <ul ref={listRef} className="nav nav--hidden flex items-center py-2">
             {sections.map((sec, i) => (
                 <li key={`section-${i}`} className={`px-5`}>
-                    <span
+                    <a
+                        href={`#${scrollTo(sec)}`}
                         className={`${spaceMono.className} text-dark-gray md:text-xl lg:text-2xl 
                         hover:text-neon-blue hover:cursor-pointer capitalize`}
                     >
                         {sec}
-                    </span>{' '}
+                    </a>{' '}
                 </li>
             ))}
             <li>

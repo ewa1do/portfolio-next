@@ -28,17 +28,18 @@ const contactLinks = [
     },
 ]
 
-function Contact() {
+function Contact(props) {
     return (
         <section
-            className={`${spaceMono.className} flex flex-col items-center pt-20 pb-6 px-16`}
+            id="contact"
+            className={`${spaceMono.className} section section--hidden flex flex-col items-center pt-20 pb-6 px-16`}
         >
             <Title>Say Hello</Title>
 
             <p className="text-dark-gray md:pt-10 text-lg md:text-xl lg:text-2xl w-[25rem] md:w-[32rem] lg:w-[40rem]">
-                Contact me anytime by clicking the email button on my website or
-                sliding into my DMs on social media. My inbox is always open, so
-                don&apos;t hesitate to reach out!
+                Contact me anytime by clicking the button or sliding into my DMs
+                on social media. My inbox is always open, so don&apos;t hesitate
+                to reach out!
             </p>
 
             <div className="py-20">

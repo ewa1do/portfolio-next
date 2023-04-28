@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react'
+
 import NavBar from '@/components/nav'
 import ButtonDownload from '@/components/buttons/ButtonDownload'
 import getFonts from '@/utils/fonts'
@@ -5,12 +7,21 @@ import getFonts from '@/utils/fonts'
 const { roboto, spaceMono } = getFonts()
 
 function HomePage(props) {
+    const sectRef = useRef()
+
+    useEffect(() => {
+        setTimeout(() => {
+            sectRef.current.classList.remove('section--fade')
+        }, 3500)
+    }, [])
+
     return (
         <section className="md:pb-48 lg:pb-28">
             <NavBar />
 
             <div
-                className={`${spaceMono.className} flex flex-col justify-center px-4 mt-20 md:mt-60 ml-[6%]`}
+                ref={sectRef}
+                className={`${spaceMono.className} section section--fade flex flex-col justify-center px-4 mt-20 md:mt-60 ml-[6%]`}
             >
                 <h5
                     className={`text-neon-blue text-xl sm:text-2xl md:text-3xl lg:text-4xl md:mb-5`}

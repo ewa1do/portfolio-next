@@ -1,6 +1,8 @@
 import useScreenSize from '@/hooks/useScreenSize'
 import { DotGothic16 } from 'next/font/google'
 
+import classes from './navbar.module.css'
+
 const docGothic16 = DotGothic16({ subsets: ['latin'], weight: '400' })
 
 function NavWrapper(props) {
@@ -16,7 +18,7 @@ function NavWrapper(props) {
             } ${width >= tablet ? 'items-center' : ''}`}
         >
             <h3
-                className={`${docGothic16.className} text-neon-blue text-3xl lg:text-4xl xl:text-5xl my-2`}
+                className={`${docGothic16.className} ${classes.edu} text-3xl lg:text-4xl xl:text-5xl my-2`}
             >
                 edu
             </h3>

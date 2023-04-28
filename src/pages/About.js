@@ -47,7 +47,7 @@ function About() {
     const { tablet } = breakpoints()
 
     return (
-        <>
+        <section id="about" className="section section--hidden">
             <SectionWrapper
                 extraStyles={`${
                     width >= tablet
@@ -96,7 +96,7 @@ function About() {
                     </ul>
                 </div>
             </SectionWrapper>
-        </>
+        </section>
     )
 }
 

@@ -33,7 +33,7 @@ const projects = [
 
 function Projects() {
     return (
-        <section>
+        <section id="what_i've_built" className="section section--hidden">
             <div className="pl-10 lg:pl-16">
                 <Title>What I&apos;ve Built</Title>
             </div>
