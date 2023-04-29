@@ -26,7 +26,7 @@ function useScreenSize() {
         }
     }, [screenSize])
 
-    return [screenSize, breakpoints]
+    return [screenSize, breakpoints()]
 }
 
 export default useScreenSize

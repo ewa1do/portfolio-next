@@ -8,8 +8,7 @@ import SectionList from './SectionList'
 
 function NavBar(props) {
     const [isListActive, setIsListActive] = useState(false)
-    const [{ width }, breakpoints] = useScreenSize()
-    const { mobile, tablet, desktop } = breakpoints()
+    const [{ width }, { mobile, tablet, desktop }] = useScreenSize()
 
     if (width <= mobile || (width > mobile && width < tablet)) {
         return (

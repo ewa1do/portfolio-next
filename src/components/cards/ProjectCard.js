@@ -11,13 +11,10 @@ import IconLink from '../icons/IconLink'
 const { roboto, spaceMono } = getFonts()
 
 function ProjectCard(props) {
-    const [{ width }, breakpoints] = useScreenSize()
-    const { tablet, desktop } = breakpoints()
+    const [{ width }, { tablet, desktop }] = useScreenSize()
     const { isHovering, handleMouseEnter, handleMouseLeave } = useHover()
 
     const { name, description, img, link, repo, stack = [] } = props
-
-    console.log(props.orientation)
 
     if (width > tablet) {
         return (

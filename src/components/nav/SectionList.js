@@ -11,8 +11,7 @@ const spaceMono = Space_Mono({ subsets: ['latin'], weight: '400' })
 function SectionList() {
     const listRef = useRef()
 
-    const [{ width }, breakpoints] = useScreenSize()
-    const { mobile, tablet, desktop } = breakpoints()
+    const [{ width }, { mobile, tablet, desktop }] = useScreenSize()
 
     const sections = sectionList()
 

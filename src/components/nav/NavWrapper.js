@@ -6,8 +6,7 @@ import classes from './navbar.module.css'
 const docGothic16 = DotGothic16({ subsets: ['latin'], weight: '400' })
 
 function NavWrapper(props) {
-    const [{ width }, breakpoints] = useScreenSize()
-    const { tablet } = breakpoints()
+    const [{ width }, { tablet }] = useScreenSize()
 
     const stylesInactive = `px-4`
 

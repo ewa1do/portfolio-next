@@ -21,8 +21,7 @@ const spaceMono = Space_Mono({ subsets: ['latin'], weight: '700' })
 
 export default function Home(props) {
     const observer = useObserver()
-    const [{ width }, breakpoints] = useScreenSize()
-    const { tablet } = breakpoints()
+    const [{ width }, { tablet }] = useScreenSize()
 
     return (
         <div

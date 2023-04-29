@@ -9,9 +9,7 @@ import Marker from '@/components/markers/Marker'
 const { roboto, spaceMono } = getFonts()
 
 function About(props) {
-    const [{ width }, breakpoints] = useScreenSize()
-
-    const { tablet } = breakpoints()
+    const [{ width }, { tablet }] = useScreenSize()
 
     const { contentBlocks, skills } = props.about
 
