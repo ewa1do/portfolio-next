@@ -1,5 +1,9 @@
 import { useEffect } from 'react'
 
+import getAboutData from '@/lib/about'
+import getWorkExperienceData from '@/lib/workExp'
+import getProjectsData from '@/lib/projects'
+
 import { Space_Mono } from 'next/font/google'
 
 import NavBar from '@/components/nav'
@@ -14,7 +18,7 @@ import useScreenSize from '@/hooks/useScreenSize'
 
 const spaceMono = Space_Mono({ subsets: ['latin'], weight: '700' })
 
-export default function Home() {
+export default function Home(props) {
     const [{ width }, breakpoints] = useScreenSize()
 
     const { tablet } = breakpoints()
@@ -45,13 +49,27 @@ export default function Home() {
         >
             <HomePage />
 
-            <About />
+            <About about={props.about} />
 
-            <Experience />
+            <Experience workExp={props.workExp} />
 
-            <Projects />
+            <Projects projects={props.projects} />
 
             <Contact />
         </div>
     )
+}
+
+export async function getStaticProps() {
+    const about = getAboutData()
+    const projects = getProjectsData()
+    const workExp = getWorkExperienceData()
+
+    return {
+        props: {
+            about,
+            workExp,
+            projects,
+        },
+    }
 }
