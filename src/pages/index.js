@@ -15,31 +15,14 @@ import HomePage from './HomePage'
 import Projects from './Projects'
 
 import useScreenSize from '@/hooks/useScreenSize'
+import useObserver from '@/hooks/useObserver'
 
 const spaceMono = Space_Mono({ subsets: ['latin'], weight: '700' })
 
 export default function Home(props) {
+    const observer = useObserver()
     const [{ width }, breakpoints] = useScreenSize()
-
     const { tablet } = breakpoints()
-
-    useEffect(() => {
-        const sections = document.querySelectorAll('.section')
-
-        const sectionObserver = new IntersectionObserver(
-            (entries, observer) => {
-                const [entry] = entries
-
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove('section--hidden')
-                    observer.unobserve(entry.target)
-                }
-            },
-            { root: null, threshold: 0.15 }
-        )
-
-        sections.forEach((section) => sectionObserver.observe(section))
-    }, [])
 
     return (
         <div
