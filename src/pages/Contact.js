@@ -43,7 +43,9 @@ function Contact(props) {
             </p>
 
             <div className="py-20">
-                <Button>Say Hello!</Button>
+                <Button>
+                    <a href="mailto:this.eduardovera@gmail.com">Say Hello!</a>
+                </Button>
             </div>
 
             <footer className="flex flex-col">

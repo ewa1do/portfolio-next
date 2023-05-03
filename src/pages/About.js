@@ -37,7 +37,7 @@ function About(props) {
                 </div>
 
                 <ImageWrapper
-                    href="/placeholderimg.jpg"
+                    href="/profile.png"
                     extraStyles="h-80 w-96 md:h-96 md:w-2/5 lg:w-2/5 lg:h-[40rem] md:mr-10 mt-10 self-center"
                 />
             </SectionWrapper>

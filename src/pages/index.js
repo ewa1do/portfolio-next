@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useEffect } from 'react'
 
 import getAboutData from '@/lib/about'
@@ -24,21 +25,26 @@ export default function Home(props) {
     const [{ width }, { tablet }] = useScreenSize()
 
     return (
-        <div
-            className={`bg-bg-dark h-screen overflow-x-hidden ${
-                width >= tablet ? 'px-6 pt-6' : ''
-            }`}
-        >
-            <HomePage />
+        <>
+            <Head>
+                <title>Edu</title>
+            </Head>
+            <div
+                className={`bg-bg-dark h-screen overflow-x-hidden ${
+                    width >= tablet ? 'px-6 pt-6' : ''
+                }`}
+            >
+                <HomePage />
 
-            <About about={props.about} />
+                <About about={props.about} />
 
-            <Experience workExp={props.workExp} />
+                <Experience workExp={props.workExp} />
 
-            <Projects projects={props.projects} />
+                <Projects projects={props.projects} />
 
-            <Contact />
-        </div>
+                <Contact />
+            </div>
+        </>
     )
 }
 

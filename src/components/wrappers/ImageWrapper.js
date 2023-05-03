@@ -24,6 +24,7 @@ function ImageWrapper(props) {
                         }
                     ), url(${props.href})`,
                     transition: 'all 1s ease',
+                    backgroundPosition: 'center',
                 }}
                 className={`bg-cover bg-center bg-no-repeat ${
                     props.extraStyles ? extraStyles : defaultStyles
@@ -41,10 +42,13 @@ function ImageWrapper(props) {
             style={{
                 backgroundImage: `linear-gradient(
                     to right,
-                    ${!isHovering ? 'rgb(0, 255, 209, 0.25)' : 'transparent'},
+                    ${!isHovering ? 'transparent' : 'transparent'},
                     ${!isHovering ? 'rgb(0, 255, 209, 0.25)' : 'transparent'}
                 ), url(${props.href})`,
-                transition: 'all 1s ease',
+                backgroundPosition: 'center',
+                border: '2px solid var(--neon-blue)',
+                borderRadius: '6px',
+                padding: '1rem',
             }}
             className={`bg-cover bg-center bg-no-repeat ${
                 props.extraStyles ? extraStyles : defaultStyles

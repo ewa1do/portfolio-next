@@ -1,49 +1,37 @@
 function getProjectsData() {
     return [
         {
-            name: 'Dummy Project',
+            name: 'Portfolio',
             description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-            stack: [
-                'Next.js',
-                'React.js',
-                'Tailwind.css',
-                'Express.js',
-                'MongoDB',
-            ],
-            img: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+                'Version 3 of my personal portfolio made it with Next.JS',
+            stack: ['Next.js', 'React.js', 'Tailwind.css', 'CSS Modules'],
+            img: '/portfolio_1.png',
             link: 'https://google.com',
-            repo: 'https://github.com/ewa1do',
+            repo: 'https://github.com/ewa1do/portfolio-next',
         },
         {
-            name: 'Dummy Project',
+            name: 'GYM Management App',
             description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
+                'Freelance project: app to manage attendance and payments at my local gym. (Currently on Development)',
             stack: [
                 'Next.js',
                 'React.js',
+                'TypeScript',
+                'Supabase',
                 'Tailwind.css',
-                'Express.js',
-                'MongoDB',
             ],
-            img: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-            link: 'https://google.com',
-            repo: 'https://github.com/ewa1do',
+            img: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80',
+            link: 'https://github.com/ewa1do/gym_schedule_app',
+            repo: 'https://github.com/ewa1do/gym_schedule_app',
         },
         {
-            name: 'Dummy Project',
+            name: "Albano's Landing Page",
             description:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the",
-            stack: [
-                'Next.js',
-                'React.js',
-                'Tailwind.css',
-                'Express.js',
-                'MongoDB',
-            ],
-            img: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-            link: 'https://google.com',
-            repo: 'https://github.com/ewa1do',
+                'Example of a Landing Page made it with pure HTML & CSS',
+            stack: ['HTML', 'CSS'],
+            img: '/portfolio_2.png',
+            link: 'https://albanos.netlify.app',
+            repo: 'https://github.com/ewa1do/albanos',
         },
     ]
 }

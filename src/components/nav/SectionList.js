@@ -18,7 +18,7 @@ function SectionList() {
     useEffect(() => {
         setTimeout(() => {
             listRef.current.classList.remove('nav--hidden')
-        }, 3000)
+        }, 2000)
     }, [])
 
     function scrollTo(string = '') {

@@ -12,7 +12,7 @@ function HomePage(props) {
     useEffect(() => {
         setTimeout(() => {
             sectRef.current.classList.remove('section--fade')
-        }, 3500)
+        }, 3000)
     }, [])
 
     return (

@@ -7,7 +7,9 @@ function ButtonDownload(props) {
             className={`${spaceMono.className} text-neon-blue border-2 border-neon-blue hover:text-bg-dark hover:font-semibold
             rounded-md p-3 text-lg xl:text-xl hover:bg-neon-blue ease-out `}
         >
-            {props.text || 'Resume'}
+            <a href="/eduardo_vera_resume.pdf" download={true}>
+                {props.text || 'Resume'}
+            </a>
         </button>
     )
 }
