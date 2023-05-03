@@ -6,7 +6,7 @@ function getProjectsData() {
                 'Version 3 of my personal portfolio made it with Next.JS',
             stack: ['Next.js', 'React.js', 'Tailwind.css', 'CSS Modules'],
             img: '/portfolio_1.png',
-            link: 'https://google.com',
+            link: 'https://eduardovera.vercel.app',
             repo: 'https://github.com/ewa1do/portfolio-next',
         },
         {
