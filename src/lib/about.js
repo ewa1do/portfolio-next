@@ -22,17 +22,8 @@ function getAboutData() {
             experience, please don't hesitate to contact me.`,
         ],
 
-        skills: [
-            'JavaScript (ES6+)',
-            'TypeScript',
-            'React.js',
-            'Next.js',
-            'Node.js',
-            'Express.js',
-            'PHP',
-            'Laravel',
-        ],
-    }
+        skills: ["JavaScript (ES6+)", "TypeScript", "React.js", "Next.js", "Node.js", "Express.js"],
+    };
 }
 
-export default getAboutData
+export default getAboutData;

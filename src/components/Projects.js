@@ -5,7 +5,7 @@ function Projects(props) {
     const { projects } = props
 
     return (
-        <section id="what_i've_built" className="section section--hidden">
+        <section id="what_i've_built" className="section">
             <div className="pl-10 lg:pl-16">
                 <Title>What I&apos;ve Built</Title>
             </div>
