@@ -8,7 +8,7 @@ function About(props) {
 
     return (
         // <section id="about" className="section section--hidden">
-        <section id="about" className="section my-40 px-10">
+        <section id="about" className="section px-4">
             <div className="">
                 <div className="text-center">
                     <Title>About me</Title>
@@ -16,7 +16,7 @@ function About(props) {
                 <article className="pr-2">
                     {contentBlocks.map((paragraph, i) => (
                         <p
-                            className={`${roboto.className} text-dark-gray py-5 text-xl`}
+                            className={`${roboto.className} text-dark-gray py-5 text-xl/8 md:text-3xl lg:text-4xl`}
                             key={`p-${i + 1}`}
                         >
                             {paragraph}
