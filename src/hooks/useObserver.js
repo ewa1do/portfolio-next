@@ -1,23 +1,24 @@
-import { useEffect } from 'react'
+import { useEffect } from "react";
 
 function useObserver() {
     useEffect(() => {
-        const sections = document.querySelectorAll('.section')
+        const sections = document.querySelectorAll(".section");
 
         const sectionObserver = new IntersectionObserver(
             (entries, observer) => {
-                const [entry] = entries
+                const [entry] = entries;
 
                 if (entry.isIntersecting) {
-                    entry.target.classList.remove('section--hidden')
-                    observer.unobserve(entry.target)
+                    entry.target.classList.remove("section--hidden");
+                    observer.unobserve(entry.target);
                 }
             },
-            { root: null, threshold: 0.15 }
-        )
+            // { root: null, threshold: 0.15 }
+            { root: null, threshold: 0.5 },
+        );
 
-        sections.forEach((section) => sectionObserver.observe(section))
-    }, [])
+        sections.forEach((section) => sectionObserver.observe(section));
+    }, []);
 }
 
-export default useObserver
+export default useObserver;

@@ -8,15 +8,15 @@ function About(props) {
 
     return (
         // <section id="about" className="section section--hidden">
-        <section id="about" className="section px-4">
-            <div className="">
-                <div className="text-center">
+        <section id="about" className="section px-4 mb-48">
+            <div className="md:flex md:flex-col md:justify-center md:items-center">
+                <div className="md:text-center">
                     <Title>About me</Title>
                 </div>
-                <article className="pr-2">
+                <article className="pr-2 md:w-8/12">
                     {contentBlocks.map((paragraph, i) => (
                         <p
-                            className={`${roboto.className} text-dark-gray py-5 text-xl/8 md:text-3xl lg:text-4xl`}
+                            className={`${roboto.className} text-dark-gray py-5 text-2xl/8 md:text-3xl lg:text-4xl/[3.3rem]`}
                             key={`p-${i + 1}`}
                         >
                             {paragraph}

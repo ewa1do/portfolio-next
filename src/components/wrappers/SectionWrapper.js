@@ -3,7 +3,7 @@ function SectionWrapper(props) {
 
     return (
         <section
-            className={`w-screen bg-bg-dark py-60 md:py-80 px-10 md:px-14 ${
+            className={`w-screen bg-bg-dark md:py-80 px-10 md:px-14 ${
                 props.extraStyles ? props.extraStyles : defaultStyles
             }`}
         >
