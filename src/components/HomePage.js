@@ -45,8 +45,12 @@ function HomePage(props) {
                     stuff. Thank you for visiting my portfolio!{" "}
                 </p>
 
-                <div>
-                    <ButtonDownload text="Download Resume" />
+                <div className="flex gap-6">
+                    <ButtonDownload text="Resume" />
+                    <ButtonDownload
+                        text="Hire Me!"
+                        link="https://www.upwork.com/freelancers/~01b22b74f750e86e47"
+                    />
                 </div>
             </div>
         </section>
