@@ -20,7 +20,7 @@ function getProjectsData() {
         // },
         {
             name: "Albano's Landing Page",
-            description: "Example of a Landing Page made it with pure HTML & CSS",
+            description: "Landing Page for a Pizza Shop made it with pure HTML & CSS",
             stack: ["HTML", "CSS"],
             img: "/portfolio_2.png",
             link: "https://albanos.netlify.app",

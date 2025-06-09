@@ -10,7 +10,7 @@ function Projects(props) {
                 <Title>What I&apos;ve Built</Title>
             </div>
 
-            <ul>
+            <ul className="flex justify-center">
                 {projects.map((proj, i) => (
                     <li key={`project-${i + 1}`}>
                         <ProjectCard {...proj} orientation={`${i % 2 === 0 ? "right" : "left"}`} />

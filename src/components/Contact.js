@@ -2,6 +2,7 @@ import { IoHeartOutline } from "react-icons/io5";
 import { CiTwitter } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 
 import Button from "@/components/buttons/Button";
 import Title from "@/components/titles/Title";
@@ -12,17 +13,22 @@ const { spaceMono } = getFonts();
 
 const contactLinks = [
     {
-        name: "github",
+        name: "Github",
         icon: <FiGithub />,
         link: "https://github.com/ewa1do",
     },
     {
-        name: "linkedin",
+        name: "Linkedin",
         icon: <FaLinkedin />,
         link: "https://www.linkedin.com/in/eduardo-vera-612626191/",
     },
     {
-        name: "twitter",
+        name: "Upwork",
+        icon: <SiUpwork />,
+        link: "https://www.upwork.com/freelancers/~01b22b74f750e86e47",
+    },
+    {
+        name: "Twitter",
         icon: <CiTwitter />,
         link: "https://twitter.com/eduvera_dev",
     },

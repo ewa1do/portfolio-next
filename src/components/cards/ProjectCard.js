@@ -16,6 +16,8 @@ function ProjectCard(props) {
 
     const { name, description, img, link, repo, stack = [] } = props;
 
+    return <ProjectCardMobile behavior={useHover} {...props} />;
+
     if (width > tablet) {
         return (
             <div
